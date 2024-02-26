@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Heart</title>
+<style>
+  body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #heart {
+    font-size: 100px;
+    color: #e74c3c;
+    animation: pulse 1.5s ease infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  #message {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  #button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #button:hover {
+    background-color: #c0392b;
+  }
+</style>
+</head>
+<body>
+  <div id="heart">❤️</div>
+  <div id="message">
+    <p>You are the beat of my heart,</p>
+    <p>the light of my life,</p>
+    <p>and the love of my life.</p>
+  </div>
+  <button id="button" onclick="showLove()">Click Me!</button>
+
+  <script>
+    function showLove() {
+      alert("I Love You!");
+    }
+  </script>
+</body>
+</html>
